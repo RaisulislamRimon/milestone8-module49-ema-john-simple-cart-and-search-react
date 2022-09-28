@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cart.css";
+import { getStoredCart } from "../../utilities/fakedb";
 
 const Cart = (props) => {
   // const Cart = ({ cart }) => {
@@ -14,6 +15,16 @@ const Cart = (props) => {
   }
   const tax = (total * 0.1).toFixed(2);
   const grandTotal = total + shipping + Number(tax);
+
+  // const storedCart = getStoredCart();
+  // if (storedCart) {
+  //   console.log(storedCart);
+  // }
+
+  // for (const key in storedCart) {
+  //   console.log(key);
+  // }
+
   return (
     <div className="cart">
       <h3>Order Summary</h3>
