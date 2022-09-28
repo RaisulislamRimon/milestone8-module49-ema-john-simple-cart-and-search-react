@@ -27,7 +27,8 @@ const Shop = () => {
         savedCart.push(addedProduct);
       }
     }
-    console.log(savedCart);
+    // console.log(savedCart);
+    setCart(savedCart);
   }, [products]);
 
   const handleAddToCart = (product) => {
