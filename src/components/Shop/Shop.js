@@ -21,7 +21,7 @@ const Shop = () => {
       const addedProduct = products.find((product) => product.id === id);
       console.log(addedProduct);
     }
-  }, []);
+  }, [products]);
 
   const handleAddToCart = (product) => {
     // console.log("Product added to cart", product);
