@@ -19,7 +19,7 @@ const Shop = () => {
     const storedCart = getStoredCart();
     for (const id in storedCart) {
       const addedProduct = products.find((product) => product.id === id);
-      console.log(addedProduct);
+      if (addedProduct) console.log(addedProduct);
     }
   }, [products]);
 
